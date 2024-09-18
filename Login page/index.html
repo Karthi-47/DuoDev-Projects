@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 h-screen">
+<body class="bg-gray-100 h-screen font-poppins font-light">
     <!-- Full page background -->
     <div class="h-screen bg-cover bg-center bg-gray-400">
         <div class="flex h-full justify-center items-center">
             <!-- Login Container with adjusted width -->
-            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden w-full max-w-4xl h-auto md:h-[600px]"> <!-- Responsive height -->
+            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden w-full max-w-3xl h-full md:h-[550px]"> <!-- Responsive height -->
                 
                 <!-- Left Side (Image + Text) -->
                 <div class="hidden md:flex md:w-3/5 relative"> <!-- Hide on small screens, show on medium and larger -->
                     <img src="./src/black.jpg" alt="Background Image" class="w-full h-full object-cover">
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6">
                         <!-- First Line -->
-                        <p class="text-lg font-sans mb-2"> Nice to see you again</p>
+                        <p class="text-sm font-sans mb-2 font-semibold tracking-wider"> NICE TO SEE YOU AGAIN</p>
 
                         <!-- Second Line -->
-                        <h1 class="text-4xl md:text-6xl font-sans">WELCOME BACK !</h1>
+                        <h1 class="text-4xl md:text-4xl font-sans font-semibold tracking-widest">WELCOME BACK !</h1>
 
                          <!-- Bold Horizontal Line -->
                          <div class="w-12 h-1 bg-white font-bold my-4"></div>
@@ -29,36 +32,43 @@
                 </div>
 
                 <!-- Right Side (Login Form) -->
-                <div class="w-full md:w-2/5 p-6 md:p-10"> <!-- Responsive padding and width -->
+                <div class="w-full md:w-2/5 p-6 md:py-8"> <!-- Responsive padding and width -->
                     <!-- Centered Login Heading -->
                     <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">Login</h2>
 
                     <!-- Username Field (No Label) -->
-                    <div class="mb-4">
-                        <input type="text" id="username" placeholder="Username" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <div class="mb-4 relative">
+                        <input type="text" id="username" placeholder="Username" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-200 font-semibold">
+                        <span class="absolute right-3 top-3">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </span>
                     </div>
 
                     <!-- Password Field (No Label) with Eye Icon and Forgot Password Link -->
                     <div class="mb-6 relative">
-                        <input type="password" id="password" placeholder="Password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="password" id="password" placeholder="Password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-200 font-semibold">
                         <span class="absolute right-3 top-3">
-                            <img src="https://via.placeholder.com/20" alt="Eye Icon" class="w-5 h-5 cursor-pointer">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                visibility
+                            </span>
                         </span>
                     </div>
 
                     <!-- Forgot Password Link -->
                     <div class="flex justify-end mb-6">
-                        <a href="#" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
+                        <a href="#" class="text-sm text-black hover:underline font-bold">Forgot password?</a>
                     </div>
 
                     <!-- Styled Login Button (Oval Shape) -->
-                    <button class="w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600 transition duration-300">
-                        Login
+                    <button class="w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600 transition duration-300 font-bold">
+                        LOGIN
                     </button>
 
                     <!-- New user register link with extra gap below -->
                     <p class="mt-4 text-center">
-                        <a href="#" class="text-sm text-blue-500 hover:underline">New user? Register here</a>
+                        <a href="#" class="text-sm text-black font-bold hover:underline">New user? Register here</a>
                     </p>
 
                     <!-- Added extra margin for gap -->
@@ -67,20 +77,20 @@
                     <!-- OR line and Social Icons with shorter lines and center alignment -->
                     <div class="flex items-center my-4 justify-center">
                         <hr class="w-1/5 border-gray-300"> <!-- Shortened lines -->
-                        <span class="px-2 text-gray-500">OR</span>
+                        <span class="px-2 text-gray-500 font-bold">OR</span>
                         <hr class="w-1/5 border-gray-300"> <!-- Shortened lines -->
                     </div>
 
                     <!-- Social Media Icons -->
                     <div class="flex justify-center space-x-4">
                         <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 transition">
-                            <img src="google-1.png" alt="Google" class="w-6 h-6">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" class="w-6 h-6"/>
                         </a>
                         <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 transition">
-                            <img src="https://via.placeholder.com/30" alt="Facebook" class="w-6 h-6">
+                            <img src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new" class="w-8 h-8"/>
                         </a>
                         <a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 transition">
-                            <img src="https://via.placeholder.com/30" alt="Twitter" class="w-6 h-6">
+                            <img src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx--v2" class="w-6 h-6"/>
                         </a>
                     </div>
                 </div>
