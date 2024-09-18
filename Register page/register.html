@@ -10,11 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-100 h-screen font-poppins font-light">
+    <!-- Rounded logo at top left -->
+    <div class="absolute hidden md:flex top-4 left-4 w-20 h-20 rounded-full p-2">
+        <img src="./src/Logo rd.webp" alt="Logo" class="w-full h-full object-cover rounded-full">
+    </div>
     <!-- Full page background -->
     <div class="h-screen bg-cover bg-center bg-gray-400">
         <div class="flex h-full justify-center items-center">
             <!-- Registration Container with adjusted width -->
-            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden w-full max-w-3xl h-full md:h-[550px]"> <!-- Responsive height -->
+            <div class="bg-white shadow-lg rounded-lg flex overflow-hidden w-full max-w-4xl h-full md:h-[550px]"> <!-- Responsive height -->
 
                 <!-- Left Side (Registration Form) -->
                 <div class="w-full md:w-3/5 p-6 md:p-6"> <!-- Responsive padding and width -->
@@ -67,7 +71,7 @@
                     <!-- OR line and Social Icons with shorter lines and center alignment -->
                     <div class="flex items-center my-4 justify-center">
                         <hr class="w-1/5 border-gray-300"> <!-- Shortened lines -->
-                        <span class="px-2 text-gray-500">OR</span>
+                        <span class="px-2 text-gray-500 font-bold">OR</span>
                         <hr class="w-1/5 border-gray-300"> <!-- Shortened lines -->
                     </div>
 
